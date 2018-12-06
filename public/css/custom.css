@@ -1,0 +1,142 @@
+
+#divider{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; 
+}
+
+#newsletter{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px; 
+}
+
+.register-box select{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+    line-height: inherit;
+    height: 50px !important;
+}
+.m-b-20{
+    margin-bottom: 20px;
+}
+
+.m-t-30{
+    margin-top: 30px;
+}
+
+.m-t-40{
+    margin-top: 40px;
+}
+
+#contact {
+    height: 435px;
+}    
+
+h2{
+    color: #abfd27;
+}
+
+.sign-up-form {
+    background: linear-gradient(to bottom, rgba(43,57,144,.8), rgba(39,170,225,1) 95%);
+    position: absolute;
+    width: 340px;
+    min-height: 350px;
+    top: 65px;
+    left: 20px;
+    padding: 20px 30px;
+    text-align: center;
+    color: #fff;
+    z-index: 1000;
+}
+
+.cd-faq ul li{
+    list-style-type: none !important;
+}
+.cd-faq ul li p{
+    font-size: 13px !important;
+}
+.sign-up-form:after {
+    content: "";
+    border-color: #27aae1 transparent transparent;
+    border-style: solid;
+    border-width: 40px 170px 0;
+    bottom: -40px;
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.light-text{
+    display: inline !important;
+    font-family: montserrat !important;
+    padding: 12px 30px !important;
+}
+
+.btn-info{
+    background: #537195 !important;
+    border-color: #537195;
+}
+
+.btn-info:hover{
+    border-color: #09284d !important;
+}
+.text-info{
+    color: #537195 !important;
+}
+
+a.text-info:hover, a.text-info:focus{
+    color: #537195 !important;
+}
+
+
+
+#eliteregister li {
+    color: #fff;
+}    
+
+#eliteregister li:before{
+    background: #5b5c5b;
+}
+
+#eliteregister li.active:before, #eliteregister li.active:after{
+    background: #93ca3a;
+}
+
+h3.panel-title{
+    font-family: 'Open Sans', Arial, sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 14px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 16px !important;
+    padding-bottom: 6px !important;
+    padding-top: 3px !important;
+}
+
+a.accordion-toggle i {
+    width: 45px !important;
+    line-height: 43px !important;
+    font-size: 20px !important;
+    margin-top: -13px !important;
+}    
+
+.justify{
+    text-align: justify;
+}
