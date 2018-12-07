@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Heal me | Contact </title>
+        <title>Cares365 | Contact </title>
         <meta name="description" content="Healme.net contact page">
         <meta name="keywords" content="Contact, Charity, Donate online, Save lifes, Health foundation">
         <meta name="viewport" content="width=device-width, initial-scale=1">

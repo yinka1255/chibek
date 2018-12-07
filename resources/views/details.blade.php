@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Heal me | {{$feed->title}}</title>
+        <title>Cares365 | {{$feed->title}}</title>
         <meta name="description" content={{$feed->title}}>
         <meta name="keywords" content="About us, Charity, Donate online, Save lifes, Health foundation">
         <meta name="viewport" content="width=device-width, initial-scale=1">
