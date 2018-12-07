@@ -185,7 +185,7 @@
                         <div class="choose-content text-left">
                             <h2>WHY YOU SHOULD DONATE</h2>
                             <p>We are fighting to save lives. We bear a burning desire to help eliminate pains in this world. No one can do this alone. But if we come together, with less effort great things can be acheived, </p>
-                            <p class="choose-option">Cares365 is a platform that provide the world the opportunity to make an impact in people's live no matter how little </p>
+                            <p class="choose-option">Cares365 is a platform that provide the world the opportunity to make an impact in people's live no matter how little. </p>
                             <!--<a class="default-btn" href="course-details.html">view courses</a>-->
                         </div>  
                     </div>
