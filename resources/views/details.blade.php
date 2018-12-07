@@ -142,7 +142,7 @@
                     <div class="col-md-8 col-sm-8">
                         <div class="about-content">
                             <h2>{{$feed->title}}</h2>
-                            <a class="default-btn pull-right white-text pull-right"  href="#" data-toggle="modal" data-target="#donation-modal" >DONATE NOW</a>
+                            <a class="default-btn pull-right white-text pull-right" style="display: block; position: relative;"  href="#" data-toggle="modal" data-target="#donation-modal" >DONATE NOW</a>
                             <p style="text-align: justify;">{!! $feed->body !!}</p>
                             <a class="default-btn pull-right white-text"  href="#" data-toggle="modal" data-target="#donation-modal" >DONATE NOW</a>
                         </div>
