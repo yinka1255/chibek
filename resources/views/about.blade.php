@@ -7,7 +7,14 @@
         <meta name="description" content="Healme.net About us">
         <meta name="keywords" content="About us, Charity, Donate online, Save lifes, Health foundation">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130639172-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-130639172-1');
+        </script>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 

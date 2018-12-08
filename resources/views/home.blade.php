@@ -3,10 +3,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Cares365 | Home </title>
-        <meta name="description" content="cares365.com is a health foundation with a mission to help africans with terminal ailments get treatment and get a new wonderful life. Donate today and help save lifes">
+        <title>Cares365 Health foundation in Nigeria | Home </title>
+        <meta name="description" content="cares365 is a health foundation with a mission to help africans with terminal ailments get treatment and new wonderful life. Donate today and help save lives">
         <meta name="keywords" content="Charity, Donate online, Save lifes, Health foundation">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130639172-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130639172-1');
+        </script>
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
