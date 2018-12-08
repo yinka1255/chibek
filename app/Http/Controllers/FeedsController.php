@@ -49,14 +49,14 @@ class FeedsController extends Controller{
                         ->where("admins.user_id", $user->id)
                         ->select("admins.*", "users.id as user_id", "users.status as user_status")->first();
 
-        $feed = Feed::first();
+        $feed = Feed::where("id", $id)->first();
 
         return view('admin/feed_details')->with(["feed"=>$feed, "loggedInUser"=>$loggedInUser]);
     }  
 
     public function customerFeedDetails($title, $id){
     
-        $feed = Feed::first();
+        $feed = Feed::where("id", $id)->first();
 
         return view('details')->with(["feed"=>$feed, "feed_id"=>$id]);
     }  

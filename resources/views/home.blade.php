@@ -42,6 +42,14 @@
         </style>
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -116,6 +124,7 @@
                                             <h2>IS WHAT MAKES US HUMAN </h2>
                                             <p>As one person, it might be difficult to change the world, But as a group of people, we can change the world of one person. No amount is too small, because together we can acheive great things</p>
                                             <a class="default-btn nav" id="dButton" href="#donate">DONATE NOW</a>
+                                            <div class="fb-like" data-href="https://cares365.com" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                                         </div>
                                     </div>
                                 </div>
