@@ -324,7 +324,7 @@
       "name": "Help {{$feed->title}}",
       "author": "Cares365",
       "image": "https://cares365.com/public/images/feeds/{{$feed->image}}",
-      "description": "Help {{$feed->title} Help donate online now.",
+      "description": "Help {{$feed->title}} Help donate online now.",
       "amountNeeded": "{{$feed->amount}}",
       
     }
