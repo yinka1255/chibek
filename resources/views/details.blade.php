@@ -3,10 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Cares365 | {{$feed->title}}</title>
+        <title>Cares365 | {{$feed->title}} </title>
         <meta name="description" content="Help {{$feed->title}}">
         <meta name="keywords" content="About us, Charity, Donate online, Save lifes, Health foundation">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:url"           content="https://www.cares365.com/details/{{$feed->title}}/{{$feed->id}}" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="{{$feed->title}}" />
+        <meta property="og:description"   content="Kindly visit https://www.cares365.com/details/{{$feed->title}}/{{$feed->id}} to donate the bit you can. Help save life today" />
+        <meta property="og:image"         content="https://www.cares365.com/public/images/feeds/{{$feed->image}}" />
+        <style>
+            .m-t-10{
+                margin-top: 10px;
+            }
+            .share-text{
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 11px;
+            }
+        </style>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130639172-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -44,6 +58,14 @@
         </style>
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -151,6 +173,16 @@
                             <h2>{{$feed->title}}</h2>
                             
                             <p style="text-align: justify;">{!! $feed->body !!}</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="fb-share-button" data-href="https://www.cares365.com/details/{{$feed->title}}/{{$feed->id}}" data-type="button"></div> <span class="share-text">Kindly share, an helper might be on your timeline.</span>
+                                </div>
+                            </div>
+                            <div class="row m-t-10">
+                                <div class="col-md-12">
+                                    <div class="fb-like" data-href="https://www.facebook.com/Cares365-978112969039591/?modal=admin_todo_tour" data-layout="standard" data-action="like" data-size="small" data-show-faces="true"></div>
+                                </div>
+                            </div>
                             <a class="default-btn pull-right white-text"  href="#" data-toggle="modal" data-target="#donation-modal" >DONATE NOW</a>
                         </div>
                     </div>
