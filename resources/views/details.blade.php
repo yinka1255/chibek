@@ -288,7 +288,7 @@
                                 return;
                             }
                             var handler = PaystackPop.setup({
-                                key: "pk_test_b1f00843f8c3d01ee3c16317fc6d72c542e04157",
+                                key: "pk_live_44879993078226bd019febc572062f2cafc95db5",
                                 email: email,
                                 amount: amount+"00",
                                 ref: Date.now(),
