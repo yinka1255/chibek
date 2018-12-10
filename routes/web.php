@@ -35,6 +35,7 @@ Route::get('/admin/feed_details/{id}', 'FeedsController@feedDetails')->middlewar
 Route::get('/register', 'UsersController@register');
 Route::get('/customer_register', 'UsersController@customerRegister');
 Route::post('/save_donation', 'FeedsController@saveDonation');
+Route::post('/send_message', 'FeedsController@sendMessage');
 
 Route::post('/login', 'LoginsController@login');
 

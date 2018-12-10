@@ -93,6 +93,38 @@ class FeedsController extends Controller{
         }    
     }  
 
+
+    public function sendMessage(Request $request){
+    
+        $name = $request->input("name");
+        $email = $request->input("email");
+        $subject = $request->input("subject");
+        $message = $request->input("message");
+
+        $data = [
+            'name'=> $name,
+            'email'=> $email,
+            'subject'=> $subject,
+            'message'=> $message,
+            'date'=>date('Y-m-d')
+            
+            
+            ];
+     
+            Mail::send('reset-password', $data, function($message) use($data){
+                
+                $message->from('yinka@theaffinityclub.com', 'Cares365');
+                $message->SMTPDebug = 4; 
+                $message->to($data['email']);
+                $message->subject('Password Recovery');
+            });
+
+            Session::flash('success', 'Thank you for contacting us. We really appreciate');
+            
+            return back();
+    }  
+
+
     public function editFeed(Request $request){
     
         $feed = Feed::where("id", $request->input("id"))->first();

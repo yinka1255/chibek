@@ -173,8 +173,8 @@
                     <div class="col-md-7 col-sm-7 col-xs-12">
                         <div class="reply-area">
                             <h3>LEAVE A message</h3>
-                            <p>I must explain to you how all this a mistaken idea of ncing great explorer of the rut the is lder of human happinescias unde omnis iste natus error sit volptatem </p>
-                            <form id="contact-form" action="mail.php" method="post">
+                            <p>We'd be glad to hear from you</p>
+                            <form id="contact-form" action="{{url('send_message')}}" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <p>Name</p>
