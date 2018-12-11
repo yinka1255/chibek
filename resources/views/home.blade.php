@@ -7,6 +7,13 @@
         <meta name="description" content="cares365 is a health foundation with a mission to help africans with terminal ailments get treatment and new wonderful life. Donate today and help save lives">
         <meta name="keywords" content="Charity, Donate online, Save lifes, Health foundation">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:url"           content="https://www.cares365.com/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Cares365 Health foundation in Nigeria" />
+        <meta property="og:description"   content="Kindly visit https://www.cares365.com to donate the bit you can. Help save life today" />
+        <meta property="og:image"         content="https://www.cares365.com/public/customer/img/logo/logo.png" />
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130639172-1"></script>
         <script>
@@ -42,16 +49,33 @@
         <style>
             .white-text{
                 color: #fff !important;
+                
+            }
+            .share-text{
+                font-size: 11px;
+                font-weight: 700;
             }
             .green{
                 background: #0f0;
                 padding: 3px 8px;
                 color: #fff;
             }
+            .fb-share-button{
+                padding-left: 10px;
+                padding-bottom: 20px;
+            }
         </style>
+          
     </head>
     <body>
-        
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -303,7 +327,8 @@
                     <div class="col-xs-12">
                         <div class="section-title text-center">
                             <img src="{{asset('public/customer/img/icon/section.png')}}"  alt="section-title">
-                            <h2>PEOPLE WE ARE PRESENTLY REACHING OUT TO</h2>
+                            <h2 style="margin-bottom: 20px !important;">PEOPLE WE ARE PRESENTLY REACHING OUT TO</h2>
+                            <h5 style="margin-bottom: 30px !important;">Donate the bit you can! No Amount is too small</h5>
                         </div>
                     </div>
                 </div>
@@ -326,6 +351,7 @@
                                     <a href="blog-details.html">${{number_format($feed->price)}} Required</a>
                                     <a class="default-btn pull-right white-text" href="#" onclick="setFeedId({{$feed->id}})" data-toggle="modal" data-target="#donation-modal" >DONATE NOW</a>
                                 </div>
+                                <div class="fb-share-button" data-href="https://www.cares365.com/details/{{$feed->title}}/{{$feed->id}}" data-type="button"></div> <span class="share-text">An helper might be on your timeline.</span>
                             </div>
                         </div>
                     </div>

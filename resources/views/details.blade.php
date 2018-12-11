@@ -10,7 +10,7 @@
         <meta property="og:url"           content="https://www.cares365.com/details/{{$feed->title}}/{{$feed->id}}" />
         <meta property="og:type"          content="website" />
         <meta property="og:title"         content="{{$feed->title}}" />
-        <meta property="og:description"   content="Kindly visit https://www.cares365.com/details/{{$feed->title}}/{{$feed->id}} to donate the bit you can. Help save life today" />
+        <meta property="og:description"   content="Kindly visit https://www.cares365.com to donate the bit you can. Help save life today" />
         <meta property="og:image"         content="https://www.cares365.com/public/images/feeds/{{$feed->image}}" />
         <style>
             .m-t-10{
