@@ -1,606 +1,460 @@
-<!doctype html>
-<html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Cares365 Health foundation in Nigeria | Home </title>
-        <meta name="description" content="cares365 is a health foundation with a mission to help africans with terminal ailments get treatment and new wonderful life. Donate today and help save lives">
-        <meta name="keywords" content="Charity, Donate online, Save lifes, Health foundation">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nigeria's No1 App development Company | Website designers in lagos</title>
+    <meta name="description" content="Nigeria's No.1 Web designer - We provide unbelievably cheap and breath taking website designs, world class web and mobile application development in Lagos, Nigeria. We are also expert in social media marketing marketing">
+    <meta name="keywords" content="Web designer, Web developer, software developer, web development company, software development company, mobile application developer, lagos, nigeria,">
 
-        <meta property="og:url"           content="https://www.cares365.com/" />
-        <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="Cares365 Health foundation in Nigeria" />
-        <meta property="og:description"   content="Kindly visit https://www.cares365.com to donate the bit you can. Help save life today" />
-        <meta property="og:image"         content="https://www.cares365.com/public/customer/img/logo/logo.png" />
+    <!-- favicon -->
+    <link href="{{asset('public/customers/images/favicon.ico')}}" type="image/x-icon" rel="shortcut icon">
+    <!-- css class -->
+    <link href="{{asset('public/customers/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/customers/css/css.css')}}" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="{{asset('public/customers/css/font-awesome.min.css')}}">
+    <!-- animate -->
+    <link rel="stylesheet" href="{{asset('public/customers/css/animate.css')}}">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/3.1.0/animate.css">
+    <!-- scroll Plugin -->
+    <link href="{{asset('public/customers/css/scrolling-nav.css')}}" rel="stylesheet">
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130639172-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <link rel="stylesheet" href="{{asset('public/customers/css/_general.scss')}}">
+    <link rel="stylesheet" href="{{asset('public/customers/css/_section.scss')}}">
+    <link rel="stylesheet" href="{{asset('public/customers/css/style.css')}}">
 
-        gtag('config', 'UA-130639172-1');
-        </script>
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light' rel='stylesheet' type='text/css'>
+    <style>
+        img.stack{
+            width: 100px;
+        }
+        .about-img{
+            /*background: #2f2e2e url("{{asset('public/customers/images/bg8.jpg')}}")*/;
+            background-size: cover;
+            height: 500px;
+        }
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        .counters{
+            background: url("{{asset('public/customers/images/b11.jpg')}}");
+            background-size: cover;
+            height: 500px;
+        }
+        .hone{
+            font-weight: 700;
+        }
+        .gradient{
+            padding-top: 70px;
+            padding-bottom: 50px;
+            text-align: center;
+            padding-left: 120px;
+            padding-right: 120px;
+            margin-left: -15px;
+            margin-right: -15px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
 
-        <link rel="stylesheet" href="{{asset('public/customer/css/bootstrap.min.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/animate.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/meanmenu.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/magnific-popup.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/owl.carousel.min.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/font-awesome.min.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/et-line-icon.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/reset.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/ionicons.min.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/material-design-iconic-font.min.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/style.css')}}">
-				<link rel="stylesheet" href="{{asset('public/customer/css/responsive.css')}}">
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<!-- Preloader-end -->
 
-		
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
-		
-		<link rel="stylesheet" href="{{asset('public/css/custom.css')}}">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
-        <script src="https://js.paystack.co/v1/inline.js"></script>
-        <style>
-            .white-text{
-                color: #fff !important;
-                
-            }
-            .share-text{
-                font-size: 11px;
-                font-weight: 700;
-            }
-            .green{
-                background: #0f0;
-                padding: 3px 8px;
-                color: #fff;
-            }
-            .fb-share-button{
-                padding-left: 10px;
-                padding-bottom: 20px;
-            }
-        </style>
-          
-    </head>
-    <body>
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-				<!-- Header Area Start -->
-		
-		<header class="top">
-			<div class="header-area header-sticky fixed">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-sm-3 col-xs-6">
-							<div class="logo">
-								<a href="index.html"><img src="{{asset('public/customer/img/logo/logo.png')}}"  alt="eduhome" /></a>
-							</div>
-						</div>
-						<div class="col-md-9 col-sm-9 col-xs-12">
-                            <div class="content-wrapper one">
-                                <!-- Main Menu Start -->
-                                <div class="main-menu one text-right">
-                                    <nav>
-                                        <ul>
-                                            <li><a href="{{url('/')}}">Home</a></li>
-                                            <li><a href="{{url('about')}}">About</a></li>
-                                            <li><a href="{{url('contact')}}">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <div class="mobile-menu hidden-lg hidden-md one"></div>
-                                <!-- Main Menu End -->
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- Header Area End -->
-		<!-- Background Area Start -->
-        <section id="slider-container" class="slider-area"> 
-            <div class="slider-owl owl-theme owl-carousel"> 
-                <!-- Start Slingle Slide -->
-                <div class="single-slide item" style="background-image: url({{asset('public/customer/img/slider/slider4.png')}})">
-                    <!-- Start Slider Content -->
-                    <div class="slider-content-area">  
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-7 col-md-offset-left-5"> 
-                                    <div class="slide-content-wrapper">
-                                        <div class="slide-content">
-                                            <h3>HELPING ONE ANOTHER </h3>
-                                            <h2>IS WHAT MAKES US HUMAN </h2>
-                                            <p>As one person, it might be difficult to change the world, But as a group of people, we can change the world of one person. No amount is too small, because together we can acheive great things</p>
-                                            <a class="default-btn nav" id="dButton" href="#donate">DONATE NOW</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Start Slider Content -->
-                </div>
-                <!-- End Slingle Slide -->
-                <!-- Start Slingle Slide -->
-                <div class="single-slide item" style="background-image: url({{asset('public/customer/img/slider/slider2.jpg')}})">
-                    <!-- Start Slider Content -->
-                    <div class="slider-content-area">   
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-7 col-md-offset-left-5"> 
-                                    <div class="slide-content-wrapper text-left">
-                                        <div class="slide-content">
-                                            <h3>HELPING ONE ANOTHER </h3>
-                                            <h2>IS WHAT MAKES US HUMAN </h2>
-                                            <p>As one person, it might be difficult to change the world, But as a group of people, we can change the world of one person. No amount is too small, because together we can acheive great things</p>
-                                            <a class="default-btn nav" id="dButton" href="#donate">DONATE NOW</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Start Slider Content -->
-                </div>
-                <!-- End Slingle Slide -->
-                <!-- Start Slingle Slide -->
-                <div class="single-slide item" style="background-image: url({{asset('public/customer/img/slider/slider1.jpg')}})">
-                    <!-- Start Slider Content -->
-                    <div class="slider-content-area">  
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-7 col-md-offset-left-5"> 
-                                    <div class="slide-content-wrapper">
-                                        <div class="slide-content">
-                                            <h3>HELPING ONE ANOTHER </h3>
-                                            <h2>IS WHAT MAKES US HUMAN </h2>
-                                            <p>As one person, it might be difficult to change the world, But as a group of people, we can change the world of one person. No amount is too small, because together we can acheive great things</p>
-                                            <a class="default-btn nav" id="dButton" href="#donate">DONATE NOW</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Start Slider Content -->
-                </div>
-                <!-- End Slingle Slide -->								
-            </div>
-        </section>
-		<!-- Background Area End -->
-        <!-- Notice Start -->
-        <section class="notice-area pt-150 pb-150">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-											<img src="{{asset('public/customer/img/slider/help.jpg')}}" >
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="">
-														<br/>
-                            <div class="single-notice-right mb-25 pb-25">
-                                <h3><i class="icon-heart"></i> Love</h3>
-                                <p>Love is the greatest weapon of mankind. Learn the art of it. Learn the song of it, the celebration of it. It is an absolute need: just as the body cannot survive without food, the soul cannot survive without love. Love is the nourishment of the soul, it is the beginning of all that is great, it is the door to the spiritual.
-                                </p>
-                            </div> 
-                            
-                            <div class="single-notice-right">
-                                <h3><i class="icon-gift"></i> Help</h3>
-                                <p>There is no exercise better for the heart than reaching down and lifting people up.</p>
-                                <p>You have not lived today until you have done something for someone who can never repay you.</p>
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Notice End -->
-        <!-- Choose Start -->
-        <section class="choose-area pb-85 pt-77">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-left-4 col-sm-8 col-md-offset-left-4">
-                        <div class="choose-content text-left">
-                            <h2>WHY YOU SHOULD DONATE</h2>
-                            <p>We are fighting to save lives. We bear a burning desire to help eliminate pains in this world. No one can do this alone. But if we come together, with less effort great things can be acheived, </p>
-                            <p class="choose-option">Cares365 is a platform that provide the world the opportunity to make an impact in people's live no matter how little. </p>
-                            <!--<a class="default-btn" href="course-details.html">view courses</a>-->
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Choose Area End -->
-        <!-- Courses Area Start -->
-        <!--
-        <div class="courses-area pt-150 text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="section-title">
-                            <img src="{{asset('public/customer/img/icon/section.png')}}"  alt="section-title">
-                            <h2>COURSES WE OFFER</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-course">
-                            <div class="course-img">
-                                <a href="course-details.html"><img src="{{asset('public/customer/img/course/course1.jpg')}}"  alt="course">
-                                    <div class="course-hover">
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="course-content">
-                                <h3><a href="course-details.html">CSE ENGINEERING</a></h3>
-                                <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                                <a class="default-btn" href="course-details.html">read more</a>
-                            </div>   
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-course">
-                            <div class="course-img">
-                                <a href="course-details.html"><img src="{{asset('public/customer/img/course/course2.jpg')}}"  alt="course">
-                                    <div class="course-hover">
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="course-content">
-                                <h3><a href="course-details.html">CSE ENGINEERING</a></h3>
-                                <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                                <a class="default-btn" href="course-details.html">read more</a>
-                            </div>   
-                        </div>
-                    </div>
-                    <div class="col-md-4 hidden-sm col-xs-12">
-                        <div class="single-course">
-                            <div class="course-img">
-                                <a href="course-details.html"><img src="{{asset('public/customer/img/course/course3.jpg')}}"  alt="course">
-                                    <div class="course-hover">
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="course-content">
-                                <h3><a href="course-details.html">CSE ENGINEERING</a></h3>
-                                <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                                <a class="default-btn" href="course-details.html">read more</a>
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll" >
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" href="#" >
+                <img alt="Imperial-ltd-Nigeria-logo" height="80px" src="{{asset('public/customers/images/imperial-logo.png')}}">
+            </a>
+            <p class="navbar-text" data-sr='wait 2s, then enter top and hustle 40px over 1.5s'></p>
         </div>
-        -->
-        <!-- Courses Area End -->
-        
-        <!-- Testimonial Area Start -->
-        <!--
-        <div class="testimonial-area pt-110 pb-105 text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="testimonial-owl owl-theme owl-carousel">
-                        <div class="col-md-8 col-md-offset-2 col-sm-12">
-                            <div class="single-testimonial">
-                                <div class="testimonial-info">
-                                    <div class="testimonial-img">
-                                        <img src="{{asset('public/customer/img/testimonial/testimonial.jpg')}}"  alt="testimonial">
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <p>I must explain to you how all this mistaken idea of denoung pleure and praising pain was born and I will give you a coete account of the system, and expound the actual</p>
-                                        <h4>David Morgan</h4>
-                                        <h5>Student, CSE</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
-        <!-- Testimonial Area End -->
-        <!-- Blog Area Start -->
-        <div class="blog-area pt-150 pb-150" id="donate">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="section-title text-center">
-                            <img src="{{asset('public/customer/img/icon/section.png')}}"  alt="section-title">
-                            <h2 style="margin-bottom: 20px !important;">PEOPLE WE ARE PRESENTLY REACHING OUT TO</h2>
-                            <h5 style="margin-bottom: 30px !important;">Donate the bit you can! No Amount is too small</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    @foreach ($feeds as $feed)
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-blog">
-                            <div class="blog-img">
-                                    <a href="{{url('details/'.$feed->title.'/'.$feed->id)}}">><img src="{{asset('public/images/feeds/'.$feed->image)}}"  alt="blog"></a>
-                                <div class="blog-hover">
-                                        <a href="{{url('details/'.$feed->title.'/'.$feed->id)}}"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-top">
-                                    <p>Nov 20, 2018 <span class="pull-right green">${{number_format($feed->amount)}} Realized so far</span></p>
-                                </div>
-                                <div class="blog-bottom">
-                                    <h2><a href="{{url('details/'.$feed->title.'/'.$feed->id)}}">{{$feed->title}} </a></h2>
-                                    <a href="blog-details.html">${{number_format($feed->price)}} Required</a>
-                                    <a class="default-btn pull-right white-text" href="#" onclick="setFeedId({{$feed->id}})" data-toggle="modal" data-target="#donation-modal" >DONATE NOW</a>
-                                </div>
-                                <div class="fb-share-button" data-href="https://www.cares365.com/details/{{$feed->title}}/{{$feed->id}}" data-type="button"></div> <span class="share-text">An helper might be on your timeline.</span>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-        <!-- Blog Area End -->
-        <!-- Subscribe Start -->
-        <div class="subscribe-area pt-60 pb-70">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="subscribe-content section-title text-center">
-                            <h2>subscribe our newsletter</h2>
-                            <p>Kindly submit your email address to get our news letter</p>
-                        </div>
-                        <div class="newsletter-form mc_embed_signup">
-                            <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll" class="mc-form"> 
-                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your e-mail address" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div class="mc-news" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
-                                    <button id="mc-embedded-subscribe" class="default-btn" type="submit" name="subscribe"><span>subscribe</span></button> 
-                                </div>    
-                            </form>
-                            <!-- mailchimp-alerts Start -->
-                            <div class="mailchimp-alerts">
-                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                            </div>
-                            <!-- mailchimp-alerts end -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Subscribe End -->
-        <!-- Footer Start -->
-        <footer class="footer-area">
-            <!--
-            <div class="main-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="single-widget pr-60">
-                                <div class="footer-logo pb-25">
-                                    <a href="index.html"><img src="{{asset('public/customer/img/logo/footer-logo.png')}}"  alt="eduhome"></a>
-                                </div>
-                                <p>I must explain to you how all this mistaken idea of denoung pleure and praising pain was born and give you a coete account of the system. </p>
-                                <div class="footer-social">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/devitems/?ref=bookmarks"><i class="zmdi zmdi-facebook"></i></a></li>
-                                        <li><a href="https://www.pinterest.com/devitemsllc/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-                                        <li><a href="https://twitter.com/devitemsllc"><i class="zmdi zmdi-twitter"></i></a></li>
-                                    </ul>    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="single-widget">
-                                <h3>information</h3>
-                                <ul>
-                                    <li><a href="#">addmission</a></li>
-                                    <li><a href="#">Academic Calender</a></li>
-                                    <li><a href="event.html">Event List</a></li>
-                                    <li><a href="#">Hostel &amp; Dinning</a></li>
-                                    <li><a href="#">TimeTable</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-6 col-xs-12">
-                            <div class="single-widget">
-                                <h3>useful links</h3>
-                                <ul>
-                                    <li><a href="course.html">our courses</a></li>
-                                    <li><a href="about.html">about us</a></li>
-                                    <li><a href="teacher.html">teachers &amp; faculty</a></li>
-                                    <li><a href="#">teams &amp; conditions</a></li>
-                                    <li><a href="event.html">our events</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="single-widget">
-                                <h3>get in touch</h3>
-                                <p>Your address goes here, Street<br>City, Roadno 785 New York</p>
-                                <p>+880  548  986  898  87<br>+880  659  785  658  98</p>
-                                <p>info@eduhome.com<br>www.eduhome.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-            -->
-            <div class="footer-bottom text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <p>©</a> 2018. All Right Reserved By Cares365.</p>
-                        </div> 
-                    </div>
-                </div>    
-            </div>
-        </footer>
-        <!-- Footer End -->
-
-      <script src="{{asset('public/customer/js/vendor/jquery-1.12.0.min.js')}}"></script>
-			<script src="{{asset('public/customer/js/bootstrap.min.js')}}"></script>
-			<script src="{{asset('public/customer/js/jquery.meanmenu.js')}}"></script>
-			<script src="{{asset('public/customer/js/jquery.magnific-popup.js')}}"></script>
-			<script src="{{asset('public/customer/js/ajax-mail.js')}}"></script>
-			<script src="{{asset('public/customer/js/owl.carousel.min.js')}}"></script>
-			<script src="{{asset('public/customer/js/jquery.mb.YTPlayer.js')}}"></script>
-			<script src="{{asset('public/customer/js/jquery.nicescroll.min.js')}}"></script>
-			<script src="{{asset('public/customer/js/plugins.js')}}"></script>
-			<script src="{{asset('public/customer/js/main.js')}}"></script>
-
-		
-			
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.js"></script>
-            
-            <script src="{{asset('public/js/jquery.js')}}"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
-		<script>
-            function getSuccess(data){
-            $.confirm({
-                                title: 'Success',
-                                content: data,
-                                type: 'green',
-                                typeAnimated: true,
-                                buttons: {
-                                                Ok: function () {
-                                                }
-                                }
-                });
-            }
-
-            function getError(data){
-                $.confirm({
-                                title: 'Error!',
-                                content: data,
-                                type: 'red',
-                                typeAnimated: true,
-                                buttons: {
-                                                Ok: function () {
-                                                }
-                                }
-                });
-            }
-		</script>
-		@if(Session::has('error'))
-			<script>
-					getError("{{Session::get('error')}}");
-			</script>
-        @endif	
-        @if(Session::has('success'))
-        <script>
-            getSuccess("{{Session::get('success')}}");
-        </script>
-        @endif	
-            <script>
-					$(document).ready(function() {
-							$('.nav').localScroll({duration:800});
-					});
-                    $("#dButton").click(function() {
-                        $('html, body').animate({
-                            scrollTop: $("#donate").offset().top   }, 2000);
-                    });
-
-                    
-            </script>
-            
-            <form>
-                <script>
-                    function setFeedId(feed_id){
-                        $("#feed_id_input").val(feed_id);
-                    }
-                    function payWithPaystack(){
-                        var name = $("#name_input").val();
-                        var email = $("#email_input").val();
-                        var amount = $("#amount_input").val();
-                        if(amount.length < 1){
-                            getError("Kindly select an amount you'd like to donate");
-                            return;
-                        }
-                        var handler = PaystackPop.setup({
-                            key: "pk_live_44879993078226bd019febc572062f2cafc95db5",
-                            email: email,
-                            amount: amount+"00",
-                            ref: Date.now(),
-                            currency: "USD",
-                            metadata: {
-                                custom_fields: [
-                                { display_name: "Name", variable_name: "name", value: name },
-                                { display_name: "Email", variable_name: "email", value: email },
-                                
-                                ]
-                            },
-                            callback: function(response){
-                                getSuccess('Thank you for the donation. Its good to know lives are getting saved through us');
-                                document.getElementById("donation-form").submit();
-                                
-                            },
-                            onClose: function(){
-                                getError('Transaction Cancelled');
-                                
-                            }
-                        });
-                        handler.openIframe();
-                    }
-
-                </script>
-            </form>
-
-    </body>
-    
-    <div class="modal model-sign fade" id="donation-modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h6>Donate</h6>
-                </div>
-                <div class="modal-body">
-                    <div class="register-form">
-                        <form class="mb-0" method="POST" id="donation-form" action="{{url("save_donation")}}">
-                                <input type="hidden" id="feed_id_input" name="feed_id" /> 
-                            <div class="form-group">
-                                <label>We'd like to know your name</label>
-                                <input type="text" class="form-control" id="name_input" name="name" placeholder="Name" >
-                            </div>
-                            <div class="form-group">
-                                <label>We'd also like to contact you later</label>
-                                <input type="email" class="form-control" id="email_input" name="email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label>Amount you'd like to donate</label>
-                                <input type="number" class="form-control" id="amount_input" name="amount" min="5" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" placeholder="Amount ($)" required>
-                            </div>
-                            
-                            <button type="button" onclick="payWithPaystack()" class="btn btn-primary btn-block mt-30">DONATE NOW</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- /.modal-content -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right nav nav-pills">
+                <li class="active"><a class="page-scroll" href="#start">HOME</a></li>
+                <li><a class="page-scroll" href="#about">ABOUT US</a></li>
+                <li><a class="page-scroll" href="#what_we_do">WHAT WE DO</a></li>
+                <li><a class="page-scroll" href="#pricing">PRICING</a></li>
+                <li><a class="page-scroll" href="#contact">CONTACT</a></li>
+            </ul>
         </div>
     </div>
+</nav>
+<!--[navbar-end]-->
+
+<!--[jumotron]-->
+<section id="start">
+    <div class="jumbotron jumbo img-responsive">
+        <div class="container" >
+            <div class="title">
+                <h1 class="hone">WEB & MOBILE APP DEVELOPERS</h1>
+            </div>
+            <p >
+                Bespoke Website Designs. Marvelous Technologies 
+            </p>
+    </div>
+</div>
+</section>
+<!--[jumotron end]-->
+
+<!--[testimonial]-->
+<div class="container-fluid">
+    <div class="row testimonial">
+        <div class="col-md-12" {{--data-wow-delay="0.5s"--}}>
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                <div class="carousel-inner text-center">
+                    <!-- Quote 1 -->
+                    <div class="item active">
+                        <blockquote>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2 ">
+                                    <h2 {{--data-sr='wait 1.4s, then enter top and hustle 50px over 2s'--}}>WHAT WE DO</h2>
+                                    <div class="testimonial-border"></div>
+                                    <p class="testimonial-text" {{--data-sr='wait 1.4s, then enter bottom and hustle 50px over 2s'--}}>We design websites, we build web and mobile applications. Unlike other companies like ours, we dont just write codes. We dont just build applications but we take end users' experience and perspectives into considerations.
+                                        We build applications that truely does what you want while reducing operational cost and time expended on tasks.
+                                    </p>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[testimonial-end]-->
+
+<!--[About Us]-->
+<div class="container-fluid">
+    <section id="about">
+        <div class="row About-Us">
+            <div class="col-md-6 about-text about-img">
+                <div class="gradient" style="text-align: justify !important;">
+                    <div {{--data-sr='wait 0.1s, then enter left and hustle 125px over 1.5s'--}}>
+                        <h2 style="margin-top: 0 !important;text-align: center;">About Us</h2>
+                        <div class="testimonial-border-white"></div>
+                        <p id="text-aboutus">Imperial is a technology company with a focus on software development. We specialize in deployment of custom applications.
+                                            Our solutions spans several functional areas such as:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Recruitment</li>
+                                    <li>Flow automation</li>
+                                    <li>Sales management</li>
+                                    <li>Inventory management</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Data management</li>
+                                    <li>Reporting</li>
+                                    <li>Remote data gathering</li>
+                                    <li>ECommerce</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p id="text-aboutus">We have over the years, developed a strong knowledge base in best practice for different industries and inculcate this knowledge into our various solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 counters"{{--data-sr='wait 0.1s, then enter right and hustle 125px over 1.5s'--}}>
+                
+            </div>
+        </div>
+    </section>
+</div>
+<!--[About Us end]-->
+
+<!--[What we do]-->
+<div class="container-fluid what-we">
+    <section id="what_we_do">
+        <div class="row what_we_do">
+            <div class="col-md-12" {{--data-sr='wait 0.1s, then enter top and hustle 50px over 1s'--}}>
+                <h2>Services</h2>
+                <div class="testimonial-border-us"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row what">
+                <a href="web-designer-lagos-nigeria">
+                    <div class="col-md-3 col-sm-4 webdesign"  {{--data-sr='wait 0.1s, then enter left and hustle 50px over 0.8s'--}}>
+                        <div class="icons">
+                            <i class="fa fa-desktop fa-3x file-text-icon"></i>
+                        </div>
+                        <h2>Web Design</h2>
+                        <p>We love beautiful. Thats why we make designs that takes breadth away.
+                        </p>
+                    </div>
+                </a>
+                <a href="web-application-developer-lagos-nigeria">
+                    <div class="col-md-3 col-sm-4 copywriting" {{--data-sr='wait 0.1s, then enter bottom and hustle 50px over 0.8s'--}}>
+                        <div class="icons">
+                            <i class="fa fa-desktop fa-3x file-text-icon"></i>
+                        </div>
+                        <h2>Web App Develpment</h2>
+                        <p>We build world class web applications with high security and efficiency
+                        </p>
+                    </div>
+                </a>
+                <a href="mobile-application-developer-lagos-nigeria">
+                    <div class="col-md-3 col-sm-4 coding" {{--data-sr='wait 0.1s, then enter right and hustle 50px over 0.8s'--}}>
+                        <div class="icons">
+                            <i class="fa fa-mobile fa-3x file-text-icon" style="padding-right: 65px !important;padding-left:65px !important;"></i>
+                        </div>
+                        <h2>Mobile App Dev.</h2>
+                        <p>Platform is never an hinderance to us. Be it Android, IOS or Windows
+                        </p>
+                    </div>
+                </a>
+                <a href="internet-marketing-lagos-nigeria">
+                    <div class="col-md-3 col-sm-4 coding" {{--data-sr='wait 0.1s, then enter right and hustle 50px over 0.8s'--}}>
+                        <div class="icons">
+                            <i class="fa fa-diamond fa-3x file-text-icon"></i>
+                        </div>
+                        <h2>Internet Marketing</h2>
+                        <p>With targeted ads, we make your products seen by people who are more likely to engage with it 
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+<!--[What we do - end]-->
+
+<!--[Animate Numbers]-->
+<div class="container-fluid animate-numbers">
+    <div class="row number">
+        <div class="col-md-3 count1 count">
+            <div class="testimonial-border-white"></div>
+            <span class="counter">55</span>
+            <!--<h2>/</h2>-->
+            <p>Awards</p>
+        </div>
+        <div class="col-md-3 count2 count">
+            <div class="testimonial-border-white"></div>
+            <span class="counter">156</span>
+            <!--<h2>/</h2>-->
+            <p>Coffe Cups</p>
+        </div>
+        <div class="col-md-3 count3 count">
+            <div class="testimonial-border-white"></div>
+            <span class="counter ">160</span>
+            <!--<h2>/</h2>-->
+            <p>Clients</p>
+        </div>
+        <div class="col-md-3 count4 count">
+            <div class="testimonial-border-white"></div>
+            <span class="counter">99</span>
+            <!--<h2>/</h2>-->
+            <p>Projects</p>
+        </div>
+    </div>
+</div>
+<!--[Animate Numbers end]-->
+
+<!--[plans-pricing]-->
+
+<div class="container-fluid plans-background">
+    <section id="pricing">
+    <div id="plans">
+        <div class="col-md-12 plans-pricing" data-sr='wait 0.1s, then enter top and hustle 20px over 1s'>
+            <h2>XMAS OFFERS</h2>
+            <div class="testimonial-border-white"></div>
+        </div>
+        <div class="row plans">
+            <div class="col-md-4 col-sm-6">
+                <div class="plans-border ">
+                    <h3>As Low As</h3>
+                    <h2>₦100,000</h2>
+                    <h3>Website Design</h3>
+                    <p>24 hour support</p>
+                    <p>Free 12 months hosting</p>
+                    <p>Free .com.ng registration</p>
+                    <div class="button-plans">
+                        <a class="btn btn-plans1 btn-lg" href="#contact" role="button" data-anijs="if: mouseover, do: pulse animated"> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                    <div class="plans-border2 ">
+                        <h3>As Low As</h3>
+                        <h2>₦500,000</h2>
+                        <h3>Web App Dev</h3>
+                        <p>10% Down payment</p>
+                        <p>24 hour support</p>
+                        <p>Free 12 months hosting</p>
+                        <div class="button-plans">
+                                <a class="btn btn-plans1 btn-lg" href="#contact" role="button" data-anijs="if: mouseover, do: pulse animated"> Contact Us</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                    <div class="plans-border3 ">
+                        <h3>As Low As</h3>
+                        <h2>₦500,000</h2>
+                        <h3>Mobile App Dev</h3>
+                        <p>10% Down payment</p>
+                        <p>24 hour support</p>
+                        <p>Free 12 months hosting</p>
+                        <div class="button-plans">
+                                <a class="btn btn-plans1 btn-lg" href="#contact" role="button" data-anijs="if: mouseover, do: pulse animated"> Contact Us</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</div>
+
+<!--[plans-pricing-end]-->
+
+<!--[download]-->
+<section id="home" data-speed="4" data-type="background">
+    <div class="container-fluid">
+        <div class="row download">
+            <div class="col-md-12">
+                <h2>Wanna know more? Talk to us!</h2>
+                <p><a class="btn down" href="#" role="button" data-anijs="if: mouseover, do: pulse animated"></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--[download-end]-->
+
+<!--[contact]-->
+<div class="container-fluid contact-background">
+    <div id="contact">
+    <div class="col-md-12 contact-us" {{--data-sr='wait 0.1s, then enter top and hustle 20px over 1s'--}}>
+        <h2>Contact Us</h2>
+        <div class="testimonial-border-white"></div>
+    </div>
+    </div>
+    <div class="row contact">
+            <div class="col-md-5 col-md-offset-1" {{--data-sr='wait 0.2s, then enter left and hustle 50px over 1s'--}}>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Name" required>
+                        <span class="input-group-addon"><i></i></span></div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email" required  >
+                        <span class="input-group-addon"><i></i></span></div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="10" placeholder="Message" required></textarea>
+                        <span class="input-group-addon"><i></i></span></div>
+                </div>
+                <div class="form-group">
+                </div>
+                <button type="submit" name="submit" id="buttonContact" class="btn contact-btn pull-right" data-anijs="if: mouseover, do: pulse animated">Send</button>
+            </div>
+        <hr class="featurette-divider hidden-lg">
+        
+            
+        <div class="col-md-5" {{--data-sr='wait 0.2s, then ease in out and hustle 20px over 1s'--}}>
+            <address>
+                <p class="lead"><img class="map" height="30px" src="{{asset('public/customers/images/map.png')}}" /> 19B Adeyemi Lawson ST, Bourdillon, Ikoyi, Lagos Nigeria</p>
+                <p class="lead"><img class="map" height="25px" src="{{asset('public/customers/images/phone.png')}}" /> +234 81 1948 7489</p>
+                <p class="lead"><img class="map" height="30px" src="{{asset('public/customers/images/mail.png')}}" /> info@imperial.com.ng</p>
+            </address>
+            <div id="map-canvas" style="height: 300px !important;"></div>
+        </div>
+    </div>
+</div>
+<!--[contact-end]-->
+
+
+
+<!--[footer]-->
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="social-icon">
+                <ul class="social-icon">
+                    <li class="icon">
+                        <a href="#" target="_blank" id="footerPinterest"></a>
+                    </li>
+                    <li class="icon">
+                        <a href="#" target="_blank" id="footerFacebook"></a>
+                    </li>
+                    <li class="icon">
+                        <a href="#" target="_blank" id="footerTwitter"></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer-text">
+                <h4>© 2018. IMPERIAL</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[footer-end]-->
+
+<!-- jQuery Plugin -->
+<script type="text/javascript" src="{{asset('public/customers/js/jquery-1.11.2.min.js')}}"></script>
+<script src="{{asset('public/customers/js/jquery.countdown.js')}}"></script>
+
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+<script>
+    $('#example').countdown({
+        date: '12/24/2022 23:59:59'
+    }, function () {
+        alert('Merry Christmas!');
+    });
+</script>
+
+<!--[animate-number]-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="{{asset('public/customers/js/jquery.counterup.min.js')}}"></script>
+
+<!--</maps>-->
+<script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization,places,drawing&amp;&key=AIzaSyC8QxwIfsIOtdjP2KfUaAoBBZkLfu37deQ&amp;&scale=2" type="text/javascript"></script>
+<script>
+    $(document).ready(function(){
+                    var myLatLng = {lat: 6.443455, lng: 3.446753};
+    
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 17,
+        center: myLatLng
+        });
+    
+        var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Mettles'
+        });
+    });
+</script>
+
+<script type="text/javascript" src="{{asset('public/customers/js/javascript.js')}}">
+</script>
+
+<script type="text/javascript" src="{{asset('public/customers/js/smoothscroll.js')}}"></script>
+
+<!-- jQuery -->
+<script src="{{asset('public/customers/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('public/customers/js/anijs.js')}}"></script>
+<script src="{{asset('public/customers/js/scrollreveal.min.js')}}"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="{{asset('public/customers/js/jquery.easing.min.js')}}"></script>
+<script src="{{asset('public/customers/js/scrolling-nav.js')}}"></script>
+<script src="{{asset('public/customers/js/jquery.vide.min.js')}}"></script>
+
+</body>
 </html>

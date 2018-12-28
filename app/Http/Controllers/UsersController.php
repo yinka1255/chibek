@@ -107,6 +107,42 @@ class UsersController extends Controller{
         return back();
     
     }
+
+    public function visitorSendMail(Request $request){
+
+        
+        $email = $request->input('email');
+
+        $name = $request->input('name');
+
+        $body = $request->input('message');
+
+        $sender = 'info@cashluck.com.ng';
+        
+        
+ 
+        $data = [
+        'email'=> $email,
+        'body'=> $body,
+        'name'=> $name,
+        'date'=>date('Y-m-d')
+        
+        
+        ];
+ 
+        Mail::send('visitor-mail', $data, function($message) use($data){
+            
+            $message->from("adeniranadeyinka101@gmail.com", 'Visitor - '.$data['name']);
+            $message->SMTPDebug = 4; 
+            $message->to('adeniranadeyinka101@gmail.com');
+            $message->subject('Visitors mail');
+        
+        });
+        
+        Session::flash('success', 'Thank you. We will get back to you shortly');
+        return back();
+    }    
+
     
     public function logout(){
 

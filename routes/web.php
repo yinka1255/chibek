@@ -12,32 +12,30 @@
 */
 
 //General Routes
-Route::get('/', 'UsersController@index');
-Route::get('login', function () {
-    return view('login');
+//Route::get('/', 'UsersController@index');
+Route::get('/', function () {
+    return view('home');
 });
 
-Route::get('about', function () {
-    return view('about');
+Route::get('/web-designer-lagos-nigeria', function () {
+    return view('web-designer-lagos-nigeria');
 });
 
-Route::get('contact', function () {
-    return view('contact');
+Route::get('/web-application-developer-lagos-nigeria', function () {
+    return view('web-application-developer-lagos-nigeria');
 });
-Route::get('/logout', 'LoginsController@logout');
-Route::post('/login', 'LoginsController@login');
-Route::get('/admin/feeds', 'FeedsController@feeds');
-Route::get('/details/{title}/{id}', 'FeedsController@customerFeedDetails');
-Route::post('/admin/save_feed', 'FeedsController@saveFeed')->middleware('auth');
-Route::post('/rec_donation', 'UsersController@customerSave')->middleware('auth');
-Route::post('/admin/edit_feed', 'FeedsController@editFeed')->middleware('auth');
-Route::get('/admin/feed_details/{id}', 'FeedsController@feedDetails')->middleware('auth');
-Route::get('/register', 'UsersController@register');
-Route::get('/customer_register', 'UsersController@customerRegister');
-Route::post('/save_donation', 'FeedsController@saveDonation');
-Route::post('/send_message', 'FeedsController@sendMessage');
 
-Route::post('/login', 'LoginsController@login');
 
-Route::post('get_lgas', 'LocationsController@getLgas');
+Route::get('/mobile-application-developer-lagos-nigeria', function () {
+    return view('mobile-application-developer-lagos-nigeria');
+});
+
+
+Route::get('/internet-marketing-lagos-nigeria', function () {
+    return view('internet-marketing-lagos-nigeria');
+});
+
+
+Route::post('/send_mail', 'UsersController@visitorSendMail');
+
 ?>
