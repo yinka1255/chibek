@@ -7,150 +7,114 @@ use Illuminate\Support\Facades\Route;
 use Session;
 use Redirect;
 use App\User;
-use App\Admin;
-use App\Vendor;
-use App\Customer;
-use App\Donation;
-use App\Location;
-use App\Card;
-use App\Feed;
-use App\State;
-use App\GeneratedCard;
-use App\UsedCard;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Support\Facades\DB;
-use Mail;
+
+use Google_Client; 
+use Google_Service_Drive;
+use Google_Service_YouTube;
 
 class UsersController extends Controller{
 
-    public function index(){
-        $feeds = Feed::orderBy("id", "DESC")->get();
-        foreach($feeds as $key => $feed){
-            $feeds[$key]['amount'] = Donation::where("feed_id", $feed->id)->sum('amount');
+    public $result = [];
+
+    public function getComments(Request $request){
+
+        $id = $request->input('url');
+
+        if(strpos($id, "youtube.com") == false){
+            Session::flash('error', 'Sorry! Only youtube urls are allowed');
+            return back();
         }
-        return view('home')->with(["feeds"=>$feeds]);
-    }
 
-    public function faq(){
-        return view('faq');
-    }
-
-    public function register(){
-        $states = State::all();
-
-        //$states = Location::select('state', 'id')->orderBy("state", "asc")->distinct("state")->get();
-
-        return view('register')->with(["states"=>$states]);
-    }
-
-    public function customerRegister(){
-        $states = State::all();
-        //$states = Location::select('state', 'id')->orderBy("state", "asc")->distinct("state")->get();
-
-        return view('customer_register')->with(["states"=>$states]);
-    }
-
-    public function customerSave(Request $request){
-
-        $user = new User;
-
-        $amount = $request->input("amount");
-
-        $feed_id = $request->input("feed_id");
-
-        $check = User::where("username", $request->input("email"))->first();
-
-        if(empty($check)){
-            $user->username = $request->input("email");
-
-            $user->password = bcrypt($request->input("password"));
-
-            $user->status = 1;
-
-            $user->type = 3;
-
-            if($user->save()){
-
-                $customer = new Customer;
-
-                $customer->user_id = $user->id;
-
-                $customer->email = $request->input("email");
-
-                $customer->name = $request->input("name");
-
-                $customer->phone = $request->input("phone");
-
-                $customer->save();
-
-                $this->registerDonation($customer->id, $amount, $feed_id);
-                //Session::flash('success', 'Thank you for the act of kindness. The patients cant thank you enough');
-                //return back();
-            }     
-        }else{
-            $customer = Customer::where("user_id", $check->id)->first();
-            $this->registerDonation($customer->id, $amount, $feed_id);
-        }
-    }
-
-    public function registerDonation($customer_id, $amount, $feed_id){
-
-        $donation = new Donation;
-
-        $donation->customer_id = $customer_id;
-        $donation->amount = $amount;
-        $donation->feed_id = $feed_id;
-
-        $donation->save();
-        Session::flash('success', 'Thank you for the act of kindness. The patients cant thank you enough');
-        return back();
-    
-    }
-
-    public function visitorSendMail(Request $request){
-
+        $firstPart = strtok( $id, '=' );
+        $allTheRest = strtok( '' ); 
         
-        $email = $request->input('email');
-
-        $name = $request->input('name');
-
-        $body = $request->input('message');
-
-        $sender = 'info@cashluck.com.ng';
+        $url      = $allTheRest; 
+        $ytkey    = "AIzaSyDxP4Wa13mTs6Zto1C2w1XAsZrAiOygnZ8"; 
+        //$nextPage = ""; 
+        $data = [];
+        $comment_count = $this->getCommentCount($url, $ytkey);
+        $total_pages = $comment_count/100;
         
-        
- 
-        $data = [
-        'email'=> $email,
-        'body'=> $body,
-        'name'=> $name,
-        'date'=>date('Y-m-d')
-        
-        
-        ];
- 
-        Mail::send('visitor-mail', $data, function($message) use($data){
+        for($i = 0; $i < 2; $i++){
+            $nextPage = "";
+            $str = @file_get_contents("https://www.googleapis.com/youtube/v3/commentThreads?key=" . "$ytkey" . "&textFormat=plainText&part=snippet&videoId=" . "$url" . "&pageToken=" . $nextPage );
+            $json = json_decode($str, true); 
+            $nextPage = $json['nextPageToken'];
+            //array_push($data,$nextPage);
+            $this->pushToTempArray($json);
+            var_dump($this->result);
             
-            $message->from("adeniranadeyinka101@gmail.com", 'Visitor - '.$data['name']);
-            $message->SMTPDebug = 4; 
-            $message->to('adeniranadeyinka101@gmail.com');
-            $message->subject('Visitors mail');
+        }   
+        //var_dump($this->result);
         
-        });
+        //$this->writeCsv($json);
         
-        Session::flash('success', 'Thank you. We will get back to you shortly');
-        return back();
-    }    
-
-    
-    public function logout(){
-
-    	Auth::logout();
+        //$this->downloadCsv($json);
+        //var_dump($data);
+        /*
+        foreach ($data['items'] as $key=>$val) { 
+            var_dump($val['snippet']['topLevelComment']['snippet']['textDisplay']);
+        }
+        */
         
-        return redirect('/');
+        /*
+        if($str !== false){
+            $json = json_decode($str, true); 
+            $this->writeCsv($json);
+        }else{
+            Session::flash('error', 'Sorry! Kindly ensure the youyube url is valid');
+            return back();
+        }
+        
+        */
+        
     }
-    
-    
-    
+
+    public function pushToTempArray($json){
+        foreach ($json['items'] as $key=>$val) { 
+            $temp[$key] = [
+                                $val['snippet']['topLevelComment']['snippet']['authorDisplayName'], 
+                                $val['snippet']['topLevelComment']['snippet']['publishedAt'], 
+                                '',
+                                $val['snippet']['topLevelComment']['snippet']['textDisplay'],
+                                '',
+                            ];   
+        }
+
+        array_push($this->result,$temp);
+        //$this->result = $temp;
+    }
+
+    public function getCommentCount($url, $ytkey){
+        $str = @file_get_contents("https://www.googleapis.com/youtube/v3/videos?id=" . "$url" . "&key=" . "$ytkey"."&part=statistics");
+        $json = json_decode($str, true);
+        return $json['items'][0]['statistics']['commentCount'];
+    }
+
+    public function writeCsv($json){
+        header('Content-Type: text/csv');
+        header('Content-Disposition: attachment; filename="sample.csv"');
+        
+        $user_CSV[0] = array('userName', 'Date', 'starRating', 'comment', 'link');   
+        foreach ($json['items'] as $key=>$val) { 
+            $user_CSV[$key] = [
+                                $val['snippet']['topLevelComment']['snippet']['authorDisplayName'], 
+                                $val['snippet']['topLevelComment']['snippet']['publishedAt'], 
+                                '',
+                                $val['snippet']['topLevelComment']['snippet']['textDisplay'],
+                                '',
+                            ];   
+        }
+
+        
+    }
+    public function downloadCsv(){
+        $fp = fopen('php://output', 'wb');
+        foreach ($this->user_CSV as $line) {
+            fputcsv($fp, $line, ',');
+        }
+        fclose($fp);
+    }
 }

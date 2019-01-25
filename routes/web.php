@@ -10,32 +10,28 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-//General Routes
-//Route::get('/', 'UsersController@index');
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
 
-Route::get('/web-designer-lagos-nigeria', function () {
-    return view('web-designer-lagos-nigeria');
+Route::get('/about', function () {
+    return view('about');
 });
 
-Route::get('/web-application-developer-lagos-nigeria', function () {
-    return view('web-application-developer-lagos-nigeria');
+Route::get('/services', function () {
+    return view('services');
 });
 
-
-Route::get('/mobile-application-developer-lagos-nigeria', function () {
-    return view('mobile-application-developer-lagos-nigeria');
+Route::get('/blog', function () {
+    return view('blog');
 });
 
-
-Route::get('/internet-marketing-lagos-nigeria', function () {
-    return view('internet-marketing-lagos-nigeria');
+Route::get('/contact', function () {
+    return view('contact');
 });
 
+Route::post('/get_comments', 'UsersController@getComments');
 
-Route::post('/send_mail', 'UsersController@visitorSendMail');
+Route::get('/gcsv', 'UsersController@writeCsv');
 
 ?>
